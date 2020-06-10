@@ -1,0 +1,6 @@
+[submodule "taskcontroller"]
+	path = taskcontroller
+	url = https://github.com/wdxpz/robottaskcontroller.git
+[submodule "robotmaster"]
+	path = robotmaster
+	url = https://github.com/wdxpz/robotmaster.git
