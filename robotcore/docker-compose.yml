@@ -1,0 +1,11 @@
+version: '2'
+services:
+  robotmaster_node:
+    image: "robotcore"
+    container_name: robotcore_node
+    environment:
+      - "HOST_OS=mac"
+    volumes:
+      - /Users/wusi/Documents/projects/Python/orange/robotcore:/root/projects/robotcore
+    ports:
+      - "11311:11311"
