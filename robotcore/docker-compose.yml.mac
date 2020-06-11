@@ -1,13 +1,11 @@
 version: '2'
 services:
   robotmaster_node:
-    image: "robotmaster"
-    container_name: robotmaster_node
+    image: "robotcore"
+    container_name: robotcore_node
     environment:
-      - "ROS_MASTER_URI=http://192.168.27.1:11311"
-      - "TURTLEBOT3_MODEL=waffle_pi"
+      - "HOST_OS=mac"
     volumes:
-      - /Users/wusi/Documents/projects/Python/orange/robotmaster:/root/projects/robotmaster
-      - /Users/wusi/Documents/projects/Python/orange/robottaskcontroller:/root/projects/robottaskcontroller
+      - /Users/wusi/Documents/projects/Python/orange/robotcore:/root/projects/robotcore
     ports:
-      - "8000:8000"
+      - "11311:11311"

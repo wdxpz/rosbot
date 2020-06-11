@@ -4,8 +4,7 @@ services:
     image: "robotcore"
     container_name: robotcore_node
     environment:
-      - "HOST_OS=mac"
-    volumes:
-      - /Users/wusi/Documents/projects/Python/orange/robotcore:/root/projects/robotcore
-    ports:
-      - "11311:11311"
+      - "ROS_IP=192.168.27.1"
+    network_mode: "host"
+    environment:
+      - "HOST_OS=linux"
