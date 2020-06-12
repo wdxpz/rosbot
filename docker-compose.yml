@@ -19,8 +19,7 @@ services:
       - "ROS_MASTER_URI=http://192.168.27.1:11311"
       - "TURTLEBOT3_MODEL=waffle_pi"
     volumes:
-      - /home/sw/projects/rosbot/robotmaster:/root/projects/robotmaster
-      - /home/sw/projects/rosbot/taskcontroller:/root/projects/taskcontroller
+      - /home/sw/projects/rosbot:/root/projects
     ports:
-      - "8000:8000"
+      - "8100:8100"
 
