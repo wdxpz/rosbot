@@ -4,10 +4,11 @@ services:
     image: "robotcore"
     container_name: roscore_node
     environment:
-      - "ROS_IP=192.168.27.1"
+      - "ROS_IP=192.168.3.118"
     network_mode: "host"
     environment:
       - "HOST_OS=linux"
+      - "Robotmaster_Service_Port=8000"
 
   robotmaster_node:
     image: "robotmaster"
@@ -15,11 +16,12 @@ services:
     network_mode: "host"
     environment:
       - "HOST_OS=linux"
-      - "ROS_IP=192.168.27.1"
-      - "ROS_MASTER_URI=http://192.168.27.1:11311"
+      - "Robotmaster_Service_Port=8000"
+      - "ROS_IP=192.168.3.118"
+      - "ROS_MASTER_URI=http://192.168.3.118:11311"
       - "TURTLEBOT3_MODEL=waffle_pi"
     volumes:
       - /home/sw/projects/rosbot:/root/projects
     ports:
-      - "8100:8100"
+      - "8000:8000"
 
