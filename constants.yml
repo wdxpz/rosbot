@@ -13,3 +13,11 @@ Inspection_Status_Codes:
   ERR_ROBOT_START: 220
   ERR_INSPECTION_STILL_RUNNING: 230
   ERR_INSPECTION_FAILED: 240
+
+Robot_Model:
+  - waffle_pi
+  - waffle
+  - burger
+  
+
+Msg_Center: "http://127.0.0.1:"
