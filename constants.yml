@@ -18,6 +18,8 @@ Robot_Model:
   - waffle_pi
   - waffle
   - burger
+  - rosbot2
+  - rosbot2_pro
   
 
 Msg_Center: "http://127.0.0.1:"
